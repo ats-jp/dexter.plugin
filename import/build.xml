@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="dexter.plugin" default="import">
+	<target name="import">
+		<delete file="../dexter-nodeps.jar" />
+		<ant dir="../../dexter" target="nodeps-jar" />
+		<copy file="../../dexter/dexter-nodeps.jar" todir=".." />
+	</target>
+</project>
